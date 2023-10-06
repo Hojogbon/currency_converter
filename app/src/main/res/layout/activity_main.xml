@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/discordname"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/myname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/name"
+        android:textAlignment="center"
+        android:textColor="#026977"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.554"
+        tools:ignore="VisualLintOverlap" />
+
+    <TextView
+        android:id="@+id/discordname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/username"
+        android:textAlignment="center"
+        android:textColor="#832000"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/mytrack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myname"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="DuplicateIds,MissingConstraints,VisualLintOverlap" />
+
+    <TextView
+        android:id="@+id/mytrack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="100dp"
+        android:text="@string/track"
+        android:textAlignment="center"
+        android:textColor="#01343A"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mylevel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discordname"
+        tools:ignore="MissingConstraints,VisualLintOverlap" />
+
+    <TextView
+        android:id="@+id/mylevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/level"
+        android:textAlignment="center"
+        android:textColor="#8A2201"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mytrack"
+        tools:ignore="VisualLintOverlap" />
+
+    <ImageView
+        android:id="@+id/mypics"
+        android:layout_width="210dp"
+        android:layout_height="166dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="@string/myimage"
+        app:layout_constraintBottom_toTopOf="@+id/myname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.882"
+        app:srcCompat="@drawable/myself"
+        tools:ignore="MissingConstraints,ImageContrastCheck" />
+
+    <!--Button:   Launch existing email clients to send email-->
+    <Button
+        android:id="@+id/clickme"
+        android:layout_width="124dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/clickhire"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mylevel" />
+
+
+    <ImageView
+        android:id="@+id/twittericon"
+        android:layout_width="26dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="40dp"
+        android:contentDescription="@string/twitterlink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linkedinicon"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/clickme"
+        app:layout_constraintTop_toBottomOf="@+id/clickme"
+        app:layout_constraintVertical_bias="0.267"
+        app:srcCompat="@drawable/twittericon" />
+
+    <ImageView
+        android:id="@+id/linkedinicon"
+        android:layout_width="17dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="40dp"
+        android:contentDescription="@string/linkedinlink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/clickme"
+        app:layout_constraintTop_toBottomOf="@+id/clickme"
+        app:layout_constraintVertical_bias="0.28"
+        app:srcCompat="@drawable/linkedinicon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
